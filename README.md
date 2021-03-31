@@ -55,15 +55,9 @@ On Tatooine, 1 year on earth is 0.83 years and 1 day 0.96 days
 
 The requested information are cached in sqlite using diskcache lib.
 
-To clean the cache use:
 
-```shell
-$ python main.py cache --clean
 
-removed cache
-```
-
-Also, to inspect the cache use:
+To inspect the cache use:
 
 ```raw
 $ python main.py cache --output
@@ -93,4 +87,12 @@ Name: Yoda
 Height: 66
 Mass: 17
 Birth Year: 896BBY
+```
+
+Also, to clean the cache use:
+
+```shell
+$ python main.py cache --clean
+
+removed cache
 ```
