@@ -10,8 +10,11 @@ To install download the repository and install the python requirements.
 Virtual environment creation is recommended.
 
     git clone https://github.com/alexVyth/swapi.git
+    cd swapi
+    
     python3 -m venv .venv
     source .venv/bin/activate
+    
     pip install --upgrade pip
     pip install -r requirements.txt
 
