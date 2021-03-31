@@ -26,7 +26,9 @@ To search for Star Wars character use:
 
 To return world use --world flag:
 
-     python main.py search 'luke sky' --world
+python main.py search 'luke sky' --world
+
+## Cache
 
 The requested information are cached in sqlite using diskcache lib.
 
