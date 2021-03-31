@@ -22,11 +22,11 @@ Virtual environment creation is recommended.
 
 To search for Star Wars character use:
 
-     python main.py search 'luke sky'
+    python main.py search 'luke sky'
 
 To return world use --world flag:
 
-python main.py search 'luke sky' --world
+    python main.py search 'luke sky' --world
 
 ## Cache
 
