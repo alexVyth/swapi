@@ -55,8 +55,6 @@ On Tatooine, 1 year on earth is 0.83 years and 1 day 0.96 days
 
 The requested information are cached in sqlite using diskcache lib.
 
-
-
 To inspect the cache use:
 
 ```raw
