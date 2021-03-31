@@ -20,3 +20,17 @@ Virtual environment creation is recommended.
 To search for Star Wars character use:
 
      python main.py search 'luke sky'
+
+To return world use --world flag:
+
+     python main.py search 'luke sky' --world
+
+The requested information are cached in sqlite using diskcache lib.
+
+To clean the cache use:
+
+     python main.py cache --clean
+
+Also, to inspect the cache use:
+
+     python main.py cache --output
