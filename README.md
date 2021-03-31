@@ -65,7 +65,7 @@ removed cache
 
 Also, to inspect the cache use:
 
-```shell
+```raw
 $ python main.py cache --output
 
 Search Term: luke
