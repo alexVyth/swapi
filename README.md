@@ -1,10 +1,22 @@
 # The Star Wars Python API
 
-Simple Python API implementation for [SWAPI](https://www.swapi.tech).
+Simple Python API implementation for searching [SWAPI](https://www.swapi.tech).
 
 ## Installation
 
+Code is tested on a Linux machine with Python 3.9.
+
+To install download the repository and install the python requirements.
+Virtual environment creation is recommended.
+
     git clone https://github.com/alexVyth/swapi.git
     python3 -m venv .venv
+    source .venv/bin/activate
+    pip install --upgrade pip
+    pip install -r requirements.txt
 
 ## Usage
+
+To search for Star Wars character use:
+
+     python main.py search 'luke sky'

@@ -1,0 +1,10 @@
+certifi==2020.12.5
+chardet==4.0.0
+click==7.1.2
+idna==2.10
+itsdangerous==1.1.0
+requests==2.25.1
+requests-cache==0.6.0.dev2
+six==1.15.0
+url-normalize==1.4.3
+urllib3==1.26.4
