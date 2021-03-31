@@ -9,33 +9,88 @@ Code is tested on a Linux machine with Python 3.9.
 To install download the repository and install the python requirements.
 Virtual environment creation is recommended.
 
-    git clone https://github.com/alexVyth/swapi.git
-    cd swapi
+```shell
+git clone https://github.com/alexVyth/swapi.git
+cd swapi
 
-    python3 -m venv .venv
-    source .venv/bin/activate
+python3 -m venv .venv
+source .venv/bin/activate
 
-    pip install --upgrade pip
-    pip install -r requirements.txt
+pip install --upgrade pip
+pip install -r requirements.txt
+```
 
-## Usage
+## Usage Guide
 
 To search for Star Wars character use:
 
-    python main.py search 'luke sky'
+```shell
+$ python main.py search 'luke sky'
 
-To return world use --world flag:
+Name: Luke Skywalker
+Height: 172
+Mass: 77
+Birth Year: 19BBY
+```
 
-    python main.py search 'luke sky' --world
+To return homeworld info of character use --world flag:
 
-## Cache
+```shell
+$ python main.py search 'luke sky' --world
+
+Name: Luke Skywalker
+Height: 172
+Mass: 77
+Birth Year: 19BBY
+
+Homeworld
+---------
+Name: Tatooine
+Population: 200000
+
+On Tatooine, 1 year on earth is 0.83 years and 1 day 0.96 days
+```
+
+## Cache Management
 
 The requested information are cached in sqlite using diskcache lib.
 
 To clean the cache use:
 
-     python main.py cache --clean
+```shell
+$ python main.py cache --clean
+
+removed cache
+```
 
 Also, to inspect the cache use:
 
-     python main.py cache --output
+```shell
+$ python main.py cache --output
+
+Search Term: luke
+Cache date: 2021-03-31 17:37:53.424728
+World set to: True
+
+Name: Luke Skywalker
+Height: 172
+Mass: 77
+Birth Year: 19BBY
+
+Homeworld
+---------
+Name: Tatooine
+Population: 200000
+
+On Tatooine, 1 year on earth is 0.83 years and 1 day 0.96 days
+
+
+Search Term: yoda
+Cache date: 2021-03-31 17:37:59.013830
+World set to: False
+
+Name: Yoda
+Height: 66
+Mass: 17
+Birth Year: 896BBY
+```
