@@ -8,7 +8,6 @@ class Planet:
     def __init__(self, data: dict) -> None:
         self.name = data['name']
         self.population = data['population']
-        self.population = data['population']
         self.orbital_period = data['orbital_period']
         self.rotation_period = data['rotation_period']
 
